@@ -1,0 +1,25 @@
+
+# application configuration (consul)
+override_test = "chilyard branch test"
+branch = "chilyard"
+CLIENT_BASE_URL_AUS = "https://madmin-client.media.qa.aus.reachlocalservices.com"
+
+# environment configuration
+aws_account_number = "762858336698" 
+aws_region = "us-west-2" 
+environment = "dev" 
+fqdn = "chilyard.int.media.dev.usa.reachlocalservices.com" 
+platform = "usa"
+region = "us-west-2"
+service_name = "madmin-client" 
+subnet_tier = "app"
+vpc_id = "vpc-e9be9a8e" 
+
+# not sure if these should be managed here
+#on_prem_dns" { default = "10.10.21.1" }
+#newrelic_license" { default = "" }
+#security_groups = ["sg-57c9162d"] 
+#subnets = ["subnet-a295e6c5", "subnet-63b92c2a", "subnet-0fb25154"] 
+subnets = ["subnet-63b92c2a", "subnet-0fb25154"] 
+#"web_subnets" { default = ["subnet-8497e4e3", "subnet-cab32683", "subnet-f2a84ba9"] 
+
