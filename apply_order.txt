@@ -1,14 +1,14 @@
 # 1) this is the order in which 'terraform apply' will build the platform
 # 2) 'terraform destroy' performs from the bottom up
-# 3) add/remove from this list to control what's build in the platform 
+# 3) add/remove from this list to control what's build in the platform - yes comment/uncomment also works 
 terraform-aws-route53-subdomain
 terraform-aws-certificates
-terraform-aws-ecs-cluster-app-tier
-terraform-aws-consul-cluster
-terraform-aws-jenkins-master
-terraform-aws-jenkins-agent
-terraform-aws-jenkins-agent-docker-builds
-terraform-aws-registrator
-terraform-aws-sumologic
-terraform-aws-madmin-client
-terraform-aws-media-gateway
+#terraform-aws-ecs-cluster-app-tier
+#terraform-aws-consul-cluster
+#terraform-aws-jenkins-master
+#terraform-aws-jenkins-agent
+#terraform-aws-jenkins-agent-docker-builds
+#terraform-aws-registrator
+#terraform-aws-sumologic
+#terraform-aws-madmin-client
+#terraform-aws-media-gateway
