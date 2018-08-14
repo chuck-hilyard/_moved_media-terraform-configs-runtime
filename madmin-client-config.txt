@@ -23,3 +23,4 @@ vpc_id = "vpc-e9be9a8e"
 subnets = ["subnet-63b92c2a", "subnet-0fb25154"] 
 #"web_subnets" { default = ["subnet-8497e4e3", "subnet-cab32683", "subnet-f2a84ba9"] 
 
+# test
