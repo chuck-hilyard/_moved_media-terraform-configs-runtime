@@ -1,14 +1,49 @@
-# 1) this is the order in which 'terraform apply' will build the platform
-# 2) 'terraform destroy' performs from the bottom up
-# 3) add/remove from this list to control what's build in the platform - yes comment/uncomment also works 
-terraform-aws-route53-subdomain
-terraform-aws-certificates
-#terraform-aws-ecs-cluster-app-tier
-#terraform-aws-consul-cluster
-#terraform-aws-jenkins-master
-#terraform-aws-jenkins-agent
-#terraform-aws-jenkins-agent-docker-builds
-#terraform-aws-registrator
-#terraform-aws-sumologic
-#terraform-aws-madmin-client
-#terraform-aws-media-gateway
+{
+  "_comment": "built from first to last; destroyed from last to first"
+  "services": [
+    {
+      "serviceName": "terraform-aws-route53-subdomain",
+      "state": "enabled"
+    },
+    {
+      "serviceName": "terraform-aws-certificates",
+      "state": "enabled"
+    },
+    {
+      "serviceName": "terraform-aws-ecs-cluster-app-tier",
+      "state"": "disabled"
+    },
+    {
+      "serviceName": "terraform-aws-consul-cluster",
+      "service": "disabled"
+    },
+    {
+      "serviceName": "terraform-aws-jenkins-master",
+      "service": "disabled"
+    },
+    {
+      "serviceName": "terraform-aws-jenkins-agent",
+      "service": "disabled",
+    },
+    {
+      "serviceNmae": "terraform-aws-jenkins-agent-docker-builds",
+      "service": "disabled"
+    },
+    {
+      "serviceName": "terraform-aws-registrator",
+      "service": "disabled"
+    },
+    {
+      "serviceName": "terraform-aws-sumologic",
+      "service": "disabled"
+    },
+    {
+      "serviceName": "terraform-aws-madmin-client",
+      "service": "disabled"
+    },
+    {
+      "serviceName": "terraform-aws-media-gateway",
+      "service": "disabled"
+    }
+  ]
+}
