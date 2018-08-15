@@ -15,35 +15,35 @@
     },
     {
       "serviceName": "terraform-aws-consul-cluster",
-      "service": "disabled"
+      "state": "disabled"
     },
     {
       "serviceName": "terraform-aws-jenkins-master",
-      "service": "disabled"
+      "state": "disabled"
     },
     {
       "serviceName": "terraform-aws-jenkins-agent",
-      "service": "disabled"
+      "state": "disabled"
     },
     {
       "serviceNmae": "terraform-aws-jenkins-agent-docker-builds",
-      "service": "disabled"
+      "state": "disabled"
     },
     {
       "serviceName": "terraform-aws-registrator",
-      "service": "disabled"
+      "state": "disabled"
     },
     {
       "serviceName": "terraform-aws-sumologic",
-      "service": "disabled"
+      "state": "disabled"
     },
     {
       "serviceName": "terraform-aws-madmin-client",
-      "service": "disabled"
+      "state": "disabled"
     },
     {
       "serviceName": "terraform-aws-media-gateway",
-      "service": "disabled"
+      "state": "disabled"
     }
   ]
 }
