@@ -1,5 +1,5 @@
 {
-  "_comment": "built from first to last; destroyed from last to first"
+  "_comment": "built from first to last; destroyed from last to first",
   "services": [
     {
       "serviceName": "terraform-aws-route53-subdomain",
@@ -11,7 +11,7 @@
     },
     {
       "serviceName": "terraform-aws-ecs-cluster-app-tier",
-      "state"": "disabled"
+      "state": "disabled"
     },
     {
       "serviceName": "terraform-aws-consul-cluster",
@@ -23,7 +23,7 @@
     },
     {
       "serviceName": "terraform-aws-jenkins-agent",
-      "service": "disabled",
+      "service": "disabled"
     },
     {
       "serviceNmae": "terraform-aws-jenkins-agent-docker-builds",
