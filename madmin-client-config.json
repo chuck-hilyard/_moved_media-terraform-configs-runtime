@@ -1,8 +1,10 @@
 {
-  "_comment": "defaults found in the interface.tf file, overrides to those defaults are *here*",
-  "app_configuration": {
+  "_comment": "defaults are found in this projects' interface.tf file, overrides to those defaults are *here*",
+  "env_config": {
     "branch": "chilyard",
-    "CLIENT_BASE_URL_AUS": "https://madmin-client.media.qa.aus.reachlocalservices.com",
     "security_groups": "sg-57c9162d"
+  },
+  "app_config": {
+    "CLIENT_BASE_URL_AUS": "https://madmin-client.media.qa.aus.reachlocalservices.com"
   }
 }
