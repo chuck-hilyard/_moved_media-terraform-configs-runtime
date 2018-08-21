@@ -5,17 +5,17 @@
       "aws_account_number": "762858336698",
       "aws_region": "us-west-2",
       "environment": "dev",
-      "fqdn": "chilyard.int.media.dev.usa.reachlocalservices.com",
       "platform": "usa",
       "web_subnets": ["subnet-8497e4e3", "subnet-cab32683", "subnet-f2a84ba9"],
       "app_subnets": ["subnet-a295e6c5", "subnet-63b92c2a", "subnet-0fb25154"],
       "db_subnets": [],
       "admin_subnets": [],
       "on_prem_dns": "10.10.21.1",
-      "newrelic_license": ""
+      "newrelic_license": "",
+      "username": "chilyard"
     }
   ],
-  "_comment_modules": "built from first to last; destroyed from last to first",
+  "_comment_modules": "order is import: built from top to botoom; destroyed from bottom to top",
   "services": [
     {
       "serviceName": "terraform-aws-route53-subdomain",
