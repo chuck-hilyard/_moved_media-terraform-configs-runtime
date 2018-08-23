@@ -15,7 +15,7 @@
       "username": "chilyard"
     }
   ],
-  "_comment_modules": "order is import: built from top to botoom; destroyed from bottom to top",
+  "_comment_modules": "order is import: built from top to botom; destroyed from bottom to top",
   "services": [
     {
       "serviceName": "terraform-aws-route53-subdomain",
@@ -27,39 +27,39 @@
     },
     {
       "serviceName": "terraform-aws-ecs-cluster-app-tier",
-      "state": "disabled"
+      "state": "enabled"
     },
     {
       "serviceName": "terraform-aws-consul-cluster",
-      "state": "disabled"
+      "state": "enabled"
     },
     {
       "serviceName": "terraform-aws-jenkins-master",
-      "state": "disabled"
+      "state": "enabled"
     },
     {
       "serviceName": "terraform-aws-jenkins-agent",
-      "state": "disabled"
+      "state": "enabled"
     },
     {
-      "serviceNmae": "terraform-aws-jenkins-agent-docker-builds",
-      "state": "disabled"
+      "serviceName": "terraform-aws-jenkins-agent-docker-builds",
+      "state": "enabled"
     },
     {
       "serviceName": "terraform-aws-registrator",
-      "state": "disabled"
+      "state": "enabled"
     },
     {
       "serviceName": "terraform-aws-sumologic",
-      "state": "disabled"
+      "state": "enabled"
     },
     {
       "serviceName": "terraform-aws-madmin-client",
-      "state": "disabled"
+      "state": "enabled"
     },
     {
       "serviceName": "terraform-aws-media-gateway",
-      "state": "disabled"
+      "state": "enabled"
     }
   ]
 }
