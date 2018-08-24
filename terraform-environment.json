@@ -12,10 +12,12 @@
       "admin_subnets": [],
       "on_prem_dns": "10.10.21.1",
       "newrelic_license": "",
-      "username": "chilyard"
+      "security_groups": ["sg-57c9162d"],
+      "username": "chilyard",
+      "vpc_id": "vpc-e9be9a8e"
     }
   ],
-  "_comment_modules": "order is import: built from top to botom; destroyed from bottom to top",
+  "_comment_modules": "order is import: built from top to bottom; destroyed from bottom to top",
   "services": [
     {
       "serviceName": "terraform-aws-route53-subdomain",
@@ -43,23 +45,23 @@
     },
     {
       "serviceName": "terraform-aws-jenkins-agent-docker-builds",
-      "state": "enabled"
+      "state": "disabled"
     },
     {
       "serviceName": "terraform-aws-registrator",
-      "state": "enabled"
+      "state": "disabled"
     },
     {
       "serviceName": "terraform-aws-sumologic",
-      "state": "enabled"
+      "state": "disabled"
     },
     {
       "serviceName": "terraform-aws-madmin-client",
-      "state": "enabled"
+      "state": "disabled"
     },
     {
       "serviceName": "terraform-aws-media-gateway",
-      "state": "enabled"
+      "state": "disabled"
     }
   ]
 }
