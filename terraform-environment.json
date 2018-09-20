@@ -14,6 +14,7 @@
       "newrelic_license": "",
       "security_groups": ["sg-57c9162d"],
       "username": "chilyard",
+      "VAULTKEY": "7da38c81-6bcb-7639-05cd-2f48b952ce13",
       "vpc_id": "vpc-e9be9a8e"
     }
   ],
@@ -21,7 +22,9 @@
   "services": [
     {
       "serviceName": "terraform-aws-route53-subdomain",
-      "state": "enabled"
+      "state": "enabled",
+      "action": "create",
+      "subdomain": "blah.blah.reachlocal.com"
     },
     {
       "serviceName": "terraform-aws-certificates",
@@ -32,7 +35,23 @@
       "state": "enabled"
     },
     {
-      "serviceName": "terraform-aws-consul-cluster",
+      "serviceName": "terraform-aws-ecs-cluster-consul-app-tier",
+      "state": "enabled"
+    },
+    {
+      "serviceName": "terraform-aws-consul-bootstrap",
+      "state": "enabled"
+    },
+    {
+      "serviceName": "terraform-aws-consul-servers",
+      "state": "enabled"
+    },
+    {
+      "serviceName": "terraform-aws-consul-agents",
+      "state": "enabled"
+    },
+    {
+      "serviceName": "terraform-aws-registrator",
       "state": "enabled"
     },
     {
@@ -48,20 +67,55 @@
       "state": "disabled"
     },
     {
-      "serviceName": "terraform-aws-registrator",
-      "state": "disabled"
-    },
-    {
       "serviceName": "terraform-aws-sumologic",
       "state": "disabled"
     },
     {
       "serviceName": "terraform-aws-madmin-client",
-      "state": "disabled"
+      "state": "enabled",
+        "consul": [ 
+          {
+          "CLIENT_BASE_URL_AUS": "https://madmin-client.media.qa.aus.reachlocalservices.com",
+          "CLIENT_BASE_URL_CAN": "https://madmin-client.media.qa.can.reachlocalservices.com",
+          "CLIENT_BASE_URL_AUS": "null",
+          "CLIENT_BASE_URL_CAN": "null",
+          "CLIENT_BASE_URL_EUR": "null",
+          "CLIENT_BASE_URL_GBR": "null",
+          "CLIENT_BASE_URL_JPN": "null",
+          "CLIENT_BASE_URL_USA": "null",
+          "MEDIA_GATEWAY_BASE_URL": "null",
+          "ADMIN_PORTAL_URL_AUS": "null",
+          "ADMIN_PORTAL_URL_CAN": "null",
+          "ADMIN_PORTAL_URL_EUR": "null",
+          "ADMIN_PORTAL_URL_GBR": "null",
+          "ADMIN_PORTAL_URL_JPN": "null",
+          "ADMIN_PORTAL_URL_USA": "null",
+          "CORP_PORTAL_URL": "null",
+          "SSO_SIGNOUT_URL": "null",
+          "SALES_FORCE_BASE_URL": "null",
+          "NEWRELIC_LICENSE_KEY": "null",
+          "NEWRELIC_APPLICATION_ID": "null",
+          "INTERCOM_APPLICATION_ID": "null",
+          "LOG_LEVEL": "null",
+          "YAHOO_ADPLATFORM_QUICKLINK_LABEL": "null",
+          "YAHOO_ADPLATFORM_QUICKLINK_URL": "null",
+          "MEDIA_CORE_UI_URL": "null"
+          }
+        ],
+        "ecs": [
+          {
+            "container_CPU": "1024",
+            "container_MEMORY": "2048"
+          }
+        ]
     },
     {
       "serviceName": "terraform-aws-media-gateway",
       "state": "disabled"
+    },
+    {
+      "serviceName": "terraform-aws-vault",
+      "state": "ignore"
     }
   ]
 }
