@@ -1,0 +1,36 @@
+{
+"serviceName": "terraform-aws-madmin-client",
+"consul": [
+  {
+  "CLIENT_BASE_URL_AUS": "https://madmin-client.media.qa.aus.reachlocalservices.com",
+  "CLIENT_BASE_URL_CAN": "https://madmin-client.media.qa.can.reachlocalservices.com",
+  "CLIENT_BASE_URL_EUR": "null",
+  "CLIENT_BASE_URL_GBR": "null",
+  "CLIENT_BASE_URL_JPN": "null",
+  "CLIENT_BASE_URL_USA": "null",
+  "MEDIA_GATEWAY_BASE_URL": "null",
+  "ADMIN_PORTAL_URL_AUS": "null",
+  "ADMIN_PORTAL_URL_CAN": "null",
+  "ADMIN_PORTAL_URL_EUR": "null",
+  "ADMIN_PORTAL_URL_GBR": "null",
+  "ADMIN_PORTAL_URL_JPN": "null",
+  "ADMIN_PORTAL_URL_USA": "null",
+  "CORP_PORTAL_URL": "null",
+  "SSO_SIGNOUT_URL": "null",
+  "SALES_FORCE_BASE_URL": "null",
+  "NEWRELIC_LICENSE_KEY": "null",
+  "NEWRELIC_APPLICATION_ID": "null",
+  "INTERCOM_APPLICATION_ID": "null",
+  "LOG_LEVEL": "null",
+  "YAHOO_ADPLATFORM_QUICKLINK_LABEL": "null",
+  "YAHOO_ADPLATFORM_QUICKLINK_URL": "null",
+  "MEDIA_CORE_UI_URL": "null"
+  }
+],
+"ecs": [
+  {
+    "container_CPU": "1024",
+    "container_MEMORY": "2048"
+  }
+]
+}
