@@ -13,7 +13,7 @@
       "on_prem_dns": "10.10.21.1",
       "newrelic_license": "",
       "security_groups": ["sg-57c9162d"],
-      "username": "chilyard",
+      "username": "user1",
       "VAULTKEY": "7da38c81-6bcb-7639-05cd-2f48b952ce13",
       "vpc_id": "vpc-e9be9a8e"
     }
@@ -74,7 +74,7 @@
     },
     {
       "serviceName": "terraform-aws-media-gateway",
-      "state": "disabled"
+      "state": "enabled"
     },
     {
       "serviceName": "terraform-aws-vault",
