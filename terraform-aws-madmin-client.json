@@ -1,7 +1,9 @@
 {
+"_comment_env_configs": "environment or platform specific overrides",
 "serviceName": "terraform-aws-madmin-client",
 "consul": [
   {
+  "branch": "test1",
   "CLIENT_BASE_URL_AUS": "https://madmin-client.media.qa.aus.reachlocalservices.com",
   "CLIENT_BASE_URL_CAN": "https://madmin-client.media.qa.can.reachlocalservices.com",
   "CLIENT_BASE_URL_EUR": "null",
@@ -9,7 +11,7 @@
   "CLIENT_BASE_URL_JPN": "null",
   "CLIENT_BASE_URL_USA": "null",
   "MEDIA_GATEWAY_BASE_URL": "null",
-  "ADMIN_PORTAL_URL_AUS": "null",
+  "ADMIN_PORTAL_URL_AUS": "https://admin.reachlocal.com.au",
   "ADMIN_PORTAL_URL_CAN": "null",
   "ADMIN_PORTAL_URL_EUR": "null",
   "ADMIN_PORTAL_URL_GBR": "null",

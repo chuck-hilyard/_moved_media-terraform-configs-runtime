@@ -2,6 +2,7 @@
 "serviceName": "terraform-aws-media-gateway",
 "consul": [
   {
+  "branch": "test2",
   "logging_level_org_springframework" : "null",
   "logging_file"                      : "null",
   "logging_pattern_level"             : "null",
