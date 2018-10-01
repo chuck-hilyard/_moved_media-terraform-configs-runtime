@@ -1,6 +1,6 @@
 
 
-## terraform-environment.json ## 
+# terraform-environment.json #
 this is the high level environment config used for the each terraform run
 
 here you can set environment values and order of create/destroy for the platform
@@ -9,8 +9,8 @@ disabled - will destroy
 ignore - does not execute any action
 
 
-## per application json configuration - allowed variables ##
-# variable syntax is $${variable_name} #
+# per application json configuration - allowed variables #
+## variable syntax is $${variable_name} ##
 environment
 platform
 subdomain
