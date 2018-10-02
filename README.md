@@ -13,5 +13,6 @@ here you can set environment values and order of create/destroy for the platform
 ## variable syntax is $${variable_name} ##
 * environment
 * platform
+* domain
 * subdomain
 * fqdn

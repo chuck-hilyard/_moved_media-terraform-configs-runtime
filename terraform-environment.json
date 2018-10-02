@@ -15,7 +15,7 @@
       "security_groups": ["sg-57c9162d"],
       "username": "user1",
       "subdomain": "user1",
-      "parent_domain": "media.dev.usa.reachlocalservices.com",
+      "domain": "media.dev.usa.reachlocalservices.com",
       "VAULTKEY": "7da38c81-6bcb-7639-05cd-2f48b952ce13",
       "vpc_id": "vpc-e9be9a8e"
     }
