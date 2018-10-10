@@ -34,21 +34,25 @@ here you can set environment values and order of create/destroy for the platform
       "on_prem_dns": "10.10.21.1",\
       "newrelic_license": "",\
       "security_groups": ["sg-57c9162d"],\
-      "username": "user1",\
+      "username": "user1",  <------- change this to YOUR username\
       "subdomain": "user1",\
       "domain": "media.dev.usa.reachlocalservices.com",\
-      "VAULTKEY": "7da38c81-6bcb-7639-05cd-2f48b952ce13",\
+      "VAULTKEY": "7d23ll1-3992-7639-93aa-2f48b952ce13",   <-------- change this to YOUR vaultkey\
       "vpc_id": "vpc-e9be9a8e"\
     }\
   ],\
   "_comment_modules": "order is import: built from top to bottom; destroyed from bottom to top",\
   "services": [\
     {\
-      "serviceName": "terraform-aws-route53-subdomain",\
+      "serviceName": "terraform-aws-route53-subdomain",   <----- this will be created before the serviceName below\
       "state": "enabled"\
     },\
     {\
-      "serviceName": "terraform-aws-certificates",\
+      "serviceName": "terraform-aws-certificates",  <------- this will be destroyed before the serviceName above\
       "state": "enabled"\
+    },\
+    {\
+      "serviceName": "terraform-aws-vault",\
+      "state": "ignore"  <------ this will be ignored during a terraform apply or destroy\
     }\
 }\
