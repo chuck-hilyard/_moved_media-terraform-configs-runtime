@@ -19,7 +19,7 @@ here you can set environment values and order of create/destroy for the platform
 
 
 # anatomy of the terraform-environment.json config file #
-{
+{\
   "_comment_env_configs": "high level environment configuration for the terraform run",
   "environment": [
     {
