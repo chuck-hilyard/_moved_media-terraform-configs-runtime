@@ -35,7 +35,7 @@ these are var/value overrides for the respective terraform module.  the filename
 terraform directory, eg.   terraform-aws-madmin-client.json and ../terraform-aws-madmin-client
 
 to make these configs more portable and require less typing there is a syntax that may be employed:
-** variable syntax is $${variable_name} ** 
+**variable syntax is $${variable_name}** 
 
 the following variables may be used in the config
 * $${environment}
