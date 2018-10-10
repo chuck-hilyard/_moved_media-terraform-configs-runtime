@@ -30,12 +30,19 @@ here you can set environment vars/values AND the order of create/destroy runs fo
 
 
 # per application json configuration - allowed variables #
-## variable syntax is $${variable_name} ##
-* environment
-* platform
-* domain
-* subdomain
-* fqdn
+
+these are var/value overrides for the respective terraform module.  the filename here should match the folder name under the main
+terraform directory, eg.   terraform-aws-madmin-client.json and ../terraform-aws-madmin-client
+
+to make these configs more portable and require less typing there is a syntax that may be employed:
+** variable syntax is $${variable_name} ** 
+
+the following variables may be used in the config
+* $${environment}
+* $${platform}
+* $${domain}
+* $${subdomain}
+* $${fqdn}
 
 
 # terraform-environment.json config file notes #
