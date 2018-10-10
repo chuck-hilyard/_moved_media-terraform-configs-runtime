@@ -79,6 +79,10 @@
       "state": "enabled"
     },
     {
+      "serviceName": "terraform-aws-ecr-repo-sync",
+      "state": "enabled"
+    },
+    {
       "serviceName": "terraform-aws-vault",
       "state": "ignore"
     }
