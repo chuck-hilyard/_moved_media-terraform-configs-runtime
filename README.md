@@ -1,12 +1,32 @@
 
 
+# the files in this directory are referenced during a terraform apply or destroy #
+
+these files set variables/values for each terraform run, but for different purposes.  here's a quick breakdown;
+
+* terraform-environment.json - these are high level vars/values used by ALL terraform modules during the terraform run
+* terraform-aws-${application-name} - these are high level vars/values used by their associated terraform modules during
+    terraform run
+* interface.tf (found in each terraform module) - these are lower level vars/values used by the specific module during its
+    execution.
+* ${filename}.tf (found in each terraform module) - many of the terraform tf files use and/or set variables specific to the
+    resources defined within them
+
 # terraform-environment.json #
 this is the high level environment config used for the each terraform run
 
-here you can set environment values and order of create/destroy for the platform
-* enabled - will create or update
-* disabled - will destroy
-* ignore - does not execute any action
+here you can set environment vars/values AND the order of create/destroy runs for the platform
+
+environment (list): these are used by all modules during this terraform run, if there's a naming conflict vars/values set here
+  win
+
+services (list): these callout the modules that'll be used during the terraform run, the order in which they'll be created or
+  destroyed, and what the modules state is during the run
+
+states:
+  * enabled - will create or update
+  * disabled - will destroy if it exists
+  * ignore - executes no action
 
 
 # per application json configuration - allowed variables #
@@ -18,7 +38,7 @@ here you can set environment values and order of create/destroy for the platform
 * fqdn
 
 
-# anatomy of the terraform-environment.json config file #
+# terraform-environment.json config file notes #
 {\
   "_comment_env_configs": "high level environment configuration for the terraform run",\
   "environment": [\
