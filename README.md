@@ -90,9 +90,9 @@ the following variables may be used in the config
 ```{
 "-_comment_env_configs": "environment or platform specific overrides",
 "serviceName": "terraform-aws-madmin-client",
-"consul": [
+"consul": [  **<---- variables in the consul list will be set in consul**
   {
-  "branch": "dockerizing",
+  "branch": "dockerizing",    **<----- the branch variable is used in several places around the devops environment**
   "CLIENT_BASE_URL_AUS": "https://madmin-client.$${subdomain}.media.$${env}.aus.reachlocalservices.com",
   "CLIENT_BASE_URL_CAN": "https://madmin-client.$${subdomain}.media.$${env}.can.reachlocalservices.com",
   "CLIENT_BASE_URL_EUR": "https://madmin-client.$${subdomain}.media.$${env}.eur.reachlocalservices.com",
@@ -119,7 +119,7 @@ the following variables may be used in the config
 ],
 "ecs": [
   {
-    "container_CPU": "1024",
+    "container_CPU": "1024",   **<---- here we set the cpu quantity for the madmin-client container in this environment** 
     "container_MEMORY": "2048"
   }
 ]
