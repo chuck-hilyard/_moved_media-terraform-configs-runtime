@@ -46,26 +46,26 @@ here you can set environment vars/values AND the order of create/destroy runs fo
       "on_prem_dns": "10.10.21.1",
       "newrelic_license": "",
       "security_groups": ["sg-57c9162d"],
-      "username": "user1",  <------- change this to YOUR username
+      "username": "user1",  <**------- change this to YOUR username
       "subdomain": "user1",
       "domain": "media.dev.usa.reachlocalservices.com",
-      "VAULTKEY": "7d23ll1-3992-7639-93aa-2f48b952ce13",   <-------- change this to YOUR vaultkey
+      "VAULTKEY": "7d23ll1-3992-7639-93aa-2f48b952ce13",   <**-------- change this to YOUR vaultkey
       "vpc_id": "vpc-e9be9a8e"
     }
   ],
   **"_comment_modules": "order is important: built from top to bottom; destroyed from bottom to top",**
   "services": [
     {
-      "serviceName": "terraform-aws-route53-subdomain",   <----- this will be created before the serviceName below
+      "serviceName": "terraform-aws-route53-subdomain",   <**----- this will be created before the serviceName below
       "state": "enabled"
     },
     {
-      "serviceName": "terraform-aws-certificates",  <------- this will be destroyed before the serviceName above
+      "serviceName": "terraform-aws-certificates",  <**------- this will be destroyed before the serviceName above
       "state": "enabled"
     },
     {
       "serviceName": "terraform-aws-vault",
-      "state": "ignore"  <------ this will be ignored during a terraform apply or destroy
+      "state": "ignore"  <**------ this will be ignored during a terraform apply or destroy
     }
 }
 ```
@@ -90,9 +90,9 @@ the following variables may be used in the config
 ```{
 "-_comment_env_configs": "environment or platform specific overrides",
 "serviceName": "terraform-aws-madmin-client",
-"consul": [  **<---- variables in the consul list will be set in consul**
+"consul": [  <**---- variables in the consul list will be set in consul**
   {
-  "branch": "dockerizing",    **<----- the branch variable is used in several places around the devops environment**
+  "branch": "dockerizing",    <**----- the branch variable is used in several places around the devops environment**
   "CLIENT_BASE_URL_AUS": "https://madmin-client.$${subdomain}.media.$${env}.aus.reachlocalservices.com",
   "CLIENT_BASE_URL_CAN": "https://madmin-client.$${subdomain}.media.$${env}.can.reachlocalservices.com",
   "CLIENT_BASE_URL_EUR": "https://madmin-client.$${subdomain}.media.$${env}.eur.reachlocalservices.com",
@@ -119,7 +119,7 @@ the following variables may be used in the config
 ],
 "ecs": [
   {
-    "container_CPU": "1024",   <---- here we set the cpu quantity for the madmin-client container in this environment 
+    "container_CPU": "1024",   <**---- here we set the cpu quantity for the madmin-client container in this environment 
     "container_MEMORY": "2048"
   }
 ]
