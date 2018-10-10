@@ -12,7 +12,7 @@ these files set variables/values for each terraform run, but for different purpo
 * ${filename}.tf (found in each terraform module) - many of the terraform tf files use and/or set variables specific to the
     resources defined within them
 
-(#terraform-environment.json)
+#terraform-environment.json
 this is the high level environment config used for the each terraform run
 
 here you can set environment vars/values AND the order of create/destroy runs for the platform
