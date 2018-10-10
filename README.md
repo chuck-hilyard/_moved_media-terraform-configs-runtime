@@ -17,13 +17,13 @@ this is the high level environment config used for the each terraform run
 
 here you can set environment vars/values AND the order of create/destroy runs for the platform
 
-environment (list): these are used by all modules during this terraform run, if there's a naming conflict vars/values set here
+**environment** (list): these are used by all modules during this terraform run, if there's a naming conflict vars/values set here
   win
 
-services (list): these callout the modules that'll be used during the terraform run, the order in which they'll be created or
+**services** (list): these callout the modules that'll be used during the terraform run, the order in which they'll be created or
   destroyed, and what the modules state is during the run
 
-states:
+**states:**
   * enabled - will create or update
   * disabled - will destroy if it exists
   * ignore - executes no action
