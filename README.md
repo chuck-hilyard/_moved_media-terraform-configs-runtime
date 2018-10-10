@@ -41,8 +41,8 @@ here you can set environment values and order of create/destroy for the platform
       "vpc_id": "vpc-e9be9a8e"\
     }\
   ],\
-  "_comment_modules": *"order is important: built from top to bottom; destroyed from bottom to top",\
-  "services"*: [\
+  "_comment_modules": **"order is important: built from top to bottom; destroyed from bottom to top",\
+  "services"**: [\
     {\
       "serviceName": "terraform-aws-route53-subdomain",   <----- this will be created before the serviceName below\
       "state": "enabled"\
