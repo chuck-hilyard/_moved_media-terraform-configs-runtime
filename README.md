@@ -29,22 +29,6 @@ here you can set environment vars/values AND the order of create/destroy runs fo
   * ignore - executes no action
 
 
-# per application json configuration - allowed variables #
-
-these are var/value overrides for the respective terraform module.  the filename here should match the folder name under the main
-terraform directory, eg.   terraform-aws-madmin-client.json and ../terraform-aws-madmin-client
-
-to make these configs more portable and require less typing there is a syntax that may be employed:
-**variable syntax is $${variable_name}** 
-
-the following variables may be used in the config
-* $${environment}
-* $${platform}
-* $${domain}
-* $${subdomain}
-* $${fqdn}
-
-
 # terraform-environment.json config file notes #
 {\
   "_comment_env_configs": "high level environment configuration for the terraform run",\
@@ -83,3 +67,21 @@ the following variables may be used in the config
       "state": "ignore"  <------ this will be ignored during a terraform apply or destroy\
     }\
 }\
+
+
+
+# per application json configuration - allowed variables #
+
+these are var/value overrides for the respective terraform module.  the filename here should match the folder name under the main
+terraform directory, eg.   terraform-aws-madmin-client.json and ../terraform-aws-madmin-client
+
+to make these configs more portable and require less typing there is a syntax that may be employed:
+**variable syntax is $${variable_name}** 
+
+the following variables may be used in the config
+* $${environment}
+* $${platform}
+* $${domain}
+* $${subdomain}
+* $${fqdn}
+
