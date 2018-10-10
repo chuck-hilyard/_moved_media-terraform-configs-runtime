@@ -29,7 +29,7 @@ here you can set environment vars/values AND the order of create/destroy runs fo
   * ignore - executes no action
 
 
-# terraform-environment.json config file notes #
+# terraform-environment.json details #
 {\
   "_comment_env_configs": "high level environment configuration for the terraform run",\
   "environment": [\
@@ -85,3 +85,41 @@ the following variables may be used in the config
 * $${subdomain}
 * $${fqdn}
 
+# application json details #
+'''{
+"-_comment_env_configs": "environment or platform specific overrides",
+"serviceName": "terraform-aws-madmin-client",
+"consul": [
+  {
+  "branch": "dockerizing",
+  "CLIENT_BASE_URL_AUS": "https://madmin-client.$${subdomain}.media.$${env}.aus.reachlocalservices.com",
+  "CLIENT_BASE_URL_CAN": "https://madmin-client.$${subdomain}.media.$${env}.can.reachlocalservices.com",
+  "CLIENT_BASE_URL_EUR": "https://madmin-client.$${subdomain}.media.$${env}.eur.reachlocalservices.com",
+  "CLIENT_BASE_URL_GBR": "https://madmin-client.$${subdomain}.media.$${env}.gbr.reachlocalservices.com",
+  "CLIENT_BASE_URL_JPN": "https://madmin-client.$${subdomain}.media.$${env}.jpn.reachlocalservices.com",
+  "CLIENT_BASE_URL_USA": "https://madmin-client.$${subdomain}.media.$${env}.usa.reachlocalservices.com",
+  "MEDIA_GATEWAY_BASE_URL": "http://media-gateway.$${fqdn}",
+  "ADMIN_PORTAL_URL_AUS": "https://platweb-aus.$${env}.reachlocal.com",
+  "ADMIN_PORTAL_URL_CAN": "https://platweb-can.$${env}.reachlocal.com",
+  "ADMIN_PORTAL_URL_EUR": "https://platweb-eur.$${env}.reachlocal.com",
+  "ADMIN_PORTAL_URL_GBR": "https://platweb-gbr.$${env}.reachlocal.com",
+  "ADMIN_PORTAL_URL_JPN": "https://platweb-jpn.$${env}.reachlocal.com",
+  "ADMIN_PORTAL_URL_USA": "https://platweb-usa.$${env}.reachlocal.com",
+  "CORP_PORTAL_URL": "https://corp.$${env}.reachlocal.com",
+  "SSO_SIGNOUT_URL": "https://sso$${env}.reachlocal.com/adfs/ls/RLSignout.aspx",
+  "SALES_FORCE_BASE_URL": "https://test.salesforce.com",
+  "NEWRELIC_LICENSE_KEY": "fe42e623fe",
+  "NEWRELIC_APPLICATION_ID": "110049921",
+  "INTERCOM_APPLICATION_ID": "x934uzl0",
+  "YAHOO_ADPLATFORM_QUICKLINK_LABEL": "l10n-quick-link.yahooGeminiLogin",
+  "YAHOO_ADPLATFORM_QUICKLINK_URL": "https://login.yahoo.com/config/login_verify2?.intl=us&&.src=gemini&.pd=c%3DDP7Q1..72e53flgv6OCrT4Lchg--&.done=https://gemini.yahoo.com/advertiser/home?.done=https:%2F%2Fgemini.yahoo.com%2F.scrumb=0",
+  "MEDIA_CORE_UI_URL": "https://media-core-ui.media.dev.usa.reachlocalservices.com"
+  }
+],
+"ecs": [
+  {
+    "container_CPU": "1024",
+    "container_MEMORY": "2048"
+  }
+]
+}'''
