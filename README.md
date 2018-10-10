@@ -119,7 +119,7 @@ the following variables may be used in the config
 ],
 "ecs": [
   {
-    "container_CPU": "1024",   **<---- here we set the cpu quantity for the madmin-client container in this environment** 
+    "container_CPU": "1024",   <font color="red"> ---- here we set the cpu quantity for the madmin-client container in this environment</font>
     "container_MEMORY": "2048"
   }
 ]
