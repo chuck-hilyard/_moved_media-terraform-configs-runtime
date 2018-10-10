@@ -86,7 +86,7 @@ the following variables may be used in the config
 * $${fqdn}
 
 # application json details #
-'''{
+```{
 "-_comment_env_configs": "environment or platform specific overrides",
 "serviceName": "terraform-aws-madmin-client",
 "consul": [
@@ -122,4 +122,4 @@ the following variables may be used in the config
     "container_MEMORY": "2048"
   }
 ]
-}'''
+}```
