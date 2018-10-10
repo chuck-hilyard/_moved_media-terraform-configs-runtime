@@ -4,7 +4,7 @@
 
 these files set variables/values for each terraform run, but for different purposes.  here's a quick breakdown;
 
-* [terraform-environment.json](#terraform-environment.json)# - these are high level vars/values used by ALL terraform modules during the terraform run
+* [terraform-environment.json](#terraform-environment.json) - these are high level vars/values used by ALL terraform modules during the terraform run
 * terraform-aws-${application-name} - these are high level vars/values used by their associated terraform modules during
     terraform run
 * interface.tf (found in each terraform module) - these are lower level vars/values used by the specific module during its
