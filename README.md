@@ -50,4 +50,5 @@ here you can set environment values and order of create/destroy for the platform
     {
       "serviceName": "terraform-aws-certificates",
       "state": "enabled"
-    },
+    }
+}
