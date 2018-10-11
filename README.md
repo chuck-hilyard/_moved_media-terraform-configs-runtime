@@ -125,3 +125,37 @@ the following variables may be used in the config
 ]
 }
 ```
+
+terraform interface.tf example (from terraform-aws-madmin-client/interface.tf)
+```
+// inputs (consul) - if a value is the same no matter the environment and/or platform, set it here
+variable "AWS_ACCOUNT_NUMBER"               { default = "" }
+variable "FQDN"                             { default = "" }
+variable "PLATFORM"                         { default = "" }
+variable "ENVIRONMENT"                      { default = "" }
+variable "REGION"                           { default = "" }
+variable "CLIENT_BASE_URL_AUS"              { default = "" }
+variable "CLIENT_BASE_URL_CAN"              { default = "" }
+variable "CLIENT_BASE_URL_EUR"              { default = "" }
+variable "CLIENT_BASE_URL_GBR"              { default = "" }
+variable "CLIENT_BASE_URL_JPN"              { default = "" }
+variable "CLIENT_BASE_URL_USA"              { default = "" }
+variable "MEDIA_GATEWAY_BASE_URL"           { default = "" }
+variable "ADMIN_PORTAL_URL_AUS"             { default = "" }
+variable "ADMIN_PORTAL_URL_CAN"             { default = "" }
+variable "ADMIN_PORTAL_URL_EUR"             { default = "" }
+variable "ADMIN_PORTAL_URL_GBR"             { default = "" }
+variable "ADMIN_PORTAL_URL_JPN"             { default = "" }
+variable "ADMIN_PORTAL_URL_USA"             { default = "" }
+variable "CORP_PORTAL_URL"                  { default = "" }
+variable "SSO_SIGNOUT_URL"                  { default = "" }
+variable "SALES_FORCE_BASE_URL"             { default = "" }
+variable "NEWRELIC_LICENSE_KEY"             { default = "" }
+variable "NEWRELIC_APPLICATION_ID"          { default = "" }
+variable "INTERCOM_APPLICATION_ID"          { default = "" }
+variable "LOG_LEVEL"                        { default = "INFO" }  <**----- this is the same in all environments but may be overridden for specific environment configurations via terraform-aws-madmin-client.json
+variable "YAHOO_ADPLATFORM_QUICKLINK_LABEL" { default = "" }
+variable "YAHOO_ADPLATFORM_QUICKLINK_URL"   { default = "" }
+variable "MEDIA_CORE_UI_URL"                { default = "" }
+```
+
