@@ -126,7 +126,7 @@ the following variables may be used in the config
 }
 ```
 
-terraform interface.tf example (from terraform-aws-madmin-client/interface.tf)
+# terraform interface.tf example (from terraform-aws-madmin-client/interface.tf) #
 ```
 // inputs (consul) - if a value is the same no matter the environment and/or platform, set it here
 variable "AWS_ACCOUNT_NUMBER"               { default = "" }
