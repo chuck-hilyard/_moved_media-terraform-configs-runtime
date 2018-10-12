@@ -20,7 +20,7 @@
       "vpc_id": "vpc-e9be9a8e"
     }
   ],
-  "_comment_modules": "order is import: built from top to bottom; destroyed from bottom to top",
+  "_comment_modules": "order is important: built from top to bottom; destroyed from bottom to top",
   "services": [
     {
       "serviceName": "terraform-aws-route53-subdomain",
