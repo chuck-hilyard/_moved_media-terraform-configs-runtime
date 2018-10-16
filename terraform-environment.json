@@ -1,5 +1,5 @@
 {
-  "_comment_env_configs": "high level environment configuration for the terraform run",
+  "_comment_env_configs": "top level environment configuration for the terraform run",
   "environment": [
     {
       "aws_account_number": "762858336698",
@@ -13,8 +13,8 @@
       "on_prem_dns": "10.10.21.1",
       "newrelic_license": "",
       "security_groups": ["sg-57c9162d"],
-      "subdomain": "chilyard",
-      "parent_domain": "media.dev.usa.reachlocalservices.com",
+      "username": "chilyard",
+      "parent_domain": "media.reachlocalservices.com",
       "VAULTKEY": "7da38c81-6bcb-7639-05cd-2f48b952ce13",
       "vpc_id": "vpc-e9be9a8e"
     }
