@@ -2,7 +2,7 @@
   "_comment_env_configs": "top level environment configuration for the terraform run",
   "environment": [
     {
-      "username": "",
+      "username": "chilyard",
       "environment": "dev",
       "platform": "gbr",
       "VAULTKEY": "7da38c81-6bcb-7639-05cd-2f48b952ce13",
