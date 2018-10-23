@@ -1,5 +1,4 @@
 
-
 # the files in this project are referenced during a terraform apply or destroy #
 
 these files set variables/values for each terraform run, but for different purposes.  here's a quick breakdown;
