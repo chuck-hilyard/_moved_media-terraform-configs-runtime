@@ -82,6 +82,10 @@
       "state": "enabled"
     },
     {
+      "serviceName": "terraform-aws-rundeck",
+      "state": "disabled"
+    },
+    {
       "serviceName": "terraform-aws-vault",
       "state": "DO_NOT_ENABLE_THIS"
     }
