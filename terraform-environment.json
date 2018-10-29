@@ -3,20 +3,20 @@
   "environment": [
     {
       "username": "",
-      "environment": "dev",
-      "platform": "gbr",
+      "environment": "prod",
+      "platform": "aus",
       "VAULTKEY": "7da38c81-6bcb-7639-05cd-2f48b952ce13",
-      "aws_account_number": "762858336698",
-      "aws_region": "us-west-2",
-      "web_subnets": ["subnet-8497e4e3", "subnet-cab32683", "subnet-f2a84ba9"],
-      "app_subnets": ["subnet-a295e6c5", "subnet-63b92c2a", "subnet-0fb25154"],
+      "aws_account_number": "696165013664",
+      "aws_region": "ap-southeast-2",
+      "web_subnets": ["subnet-deee3497", "subnet-50c86337"],
+      "app_subnets": ["subnet-50ea3019", "subnet-24f55e43"],
       "db_subnets": [],
       "admin_subnets": [],
       "on_prem_dns": "10.10.21.1",
       "newrelic_license": "",
-      "security_groups": ["sg-57c9162d"],
+      "security_groups": ["sg-c24615a4"],
       "parent_domain": "media.reachlocalservices.com",
-      "vpc_id": "vpc-e9be9a8e"
+      "vpc_id": "vpc-5e26c139"
     }
   ],
   "_comment_modules": "order is important: built from top to bottom; destroyed from bottom to top",
