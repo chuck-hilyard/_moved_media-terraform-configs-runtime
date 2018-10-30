@@ -2,9 +2,9 @@
   "_comment_env_configs": "top level environment configuration for the terraform run",
   "environment": [
     {
-      "username": "",
+      "username": "chilyard",
       "environment": "dev",
-      "platform": "gbr",
+      "platform": "usa",
       "VAULTKEY": "7da38c81-6bcb-7639-05cd-2f48b952ce13",
       "aws_account_number": "762858336698",
       "aws_region": "us-west-2",
