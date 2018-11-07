@@ -88,6 +88,18 @@
     {
       "serviceName": "terraform-aws-vault",
       "state": "DO_NOT_ENABLE_THIS"
+    },
+    {
+      "serviceName": "terraform-aws-rundeck",
+      "state": "enabled"
+    },
+    {
+      "serviceName": "terraform-aws-prometheus-alertmanager",
+      "state": "enabled"
+    },
+    {
+      "serviceName": "terraform-aws-prometheus",
+      "state": "enabled"
     }
   ]
 }
