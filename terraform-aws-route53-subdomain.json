@@ -4,7 +4,8 @@
 "consul": [
   {
   "aws_account_number": "762858336698",
-  "aws_region": "us-west-2"
+  "aws_region": "us-west-2",
+  "aws_profile": "rl-media-sandbox"
   }
 ]
 }

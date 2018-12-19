@@ -3,6 +3,7 @@
   "environment": [
     {
       "username": "chilyard",
+      "aws_profile": "rl-media-sandbox",
       "environment": "dev",
       "platform": "usa",
       "VAULTKEY": "7da38c81-6bcb-7639-05cd-2f48b952ce13",
@@ -80,10 +81,6 @@
     {
       "serviceName": "terraform-aws-ecr-repo-sync",
       "state": "enabled"
-    },
-    {
-      "serviceName": "terraform-aws-rundeck",
-      "state": "disabled"
     },
     {
       "serviceName": "terraform-aws-vault",
