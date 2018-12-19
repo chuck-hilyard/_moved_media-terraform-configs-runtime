@@ -3,6 +3,8 @@
   "environment": [
     {
       "username": "",
+      "AWS_PROFILE": "rl-tools",
+      "aws_profile": "rl-tools",
       "environment": "prod",
       "platform": "aus",
       "VAULTKEY": "0668a312-1d79-2490-577f-5f2db462f1f7",
@@ -80,10 +82,6 @@
     {
       "serviceName": "terraform-aws-ecr-repo-sync",
       "state": "enabled"
-    },
-    {
-      "serviceName": "terraform-aws-rundeck",
-      "state": "disabled"
     },
     {
       "serviceName": "terraform-aws-vault",
