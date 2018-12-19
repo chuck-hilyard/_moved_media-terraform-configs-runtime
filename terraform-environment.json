@@ -3,6 +3,7 @@
   "environment": [
     {
       "username": "chilyard",
+      "AWS_PROFILE": "rl-media-sandbox",
       "aws_profile": "rl-media-sandbox",
       "environment": "dev",
       "platform": "usa",
@@ -15,9 +16,9 @@
       "admin_subnets": [],
       "on_prem_dns": "10.10.21.1",
       "newrelic_license": "",
-      "security_groups": ["sg-57c9162d"],
+      "security_groups": ["sg-c24615a4"],
       "parent_domain": "media.reachlocalservices.com",
-      "vpc_id": "vpc-e9be9a8e"
+      "vpc_id": "vpc-5e26c139"
     }
   ],
   "_comment_modules": "order is important: built from top to bottom; destroyed from bottom to top",
