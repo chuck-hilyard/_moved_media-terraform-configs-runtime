@@ -32,7 +32,7 @@
       "state": "enabled"
     },
     {
-      "serviceName": "terraform-aws-ecs-cluster-app-tier",
+      "serviceName": "terraform-aws-app-cluster-00",
       "state": "enabled"
     },
     {
@@ -117,6 +117,30 @@
     },
     {
       "serviceName": "terraform-aws-media-gateway",
+      "state": "enabled"
+    },
+    {
+      "serviceName": "terraform-aws-madmin-dashboard-etl",
+      "state": "enabled"
+    },
+    {
+      "serviceName": "terraform-aws-media-core-gateway",
+      "state": "enabled"
+    },
+    {
+      "serviceName": "terraform-aws-media-reporting",
+      "state": "enabled"
+    },
+    {
+      "serviceName": "terraform-aws-proposal-tool-client",
+      "state": "enabled"
+    },
+    {
+      "serviceName": "terraform-aws-media-etl-pentaho",
+      "state": "enabled"
+    },
+    {
+      "serviceName": "terraform-aws-google-ads-connector",
       "state": "enabled"
     }
   ]

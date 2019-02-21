@@ -1,0 +1,21 @@
+{
+"-_comment_env_configs": "environment or platform specific overrides",
+"serviceName": "terraform-aws-madmin-client",
+"consul": [
+  {
+  "JENKINSSTRINGREPLACEAUTHTYPE": "okta",        
+  "JENKINSSTRINGREPLACEGAID": "",
+  "JENKINSSTRINGREPLACEOKTACLIENTID": "0oa8lqcw39YI1aOZ61t7",
+  "JENKINSSTRINGREPLACEOKTAISSUER": "https://gannett.okta.com/oauth2/aus8lqrdoly6Eh2iG1t7",
+  "JENKINSSTRINGREPLACEOKTAREDIRECTURI": "https://proposal-tool-client.chilyard.dev.usa.media.reachlocalservices.com/",
+  "proposal_tool_v2_gateway": "https://proposal-tool-v2.chilyard.dev.usa.media.reachlocalservices.com/proposal-tool-v2",
+  "signout": "https://ssoqa.reachlocal.com/adfs/ls/RLSignout.aspx"
+  }
+],
+"ecs": [
+  {
+    "container_CPU": "1024",
+    "container_MEMORY": "2048"
+  }
+]
+}
