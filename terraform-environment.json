@@ -2,7 +2,7 @@
   "_comment_env_configs": "top level environment configuration for the terraform run",
   "environment": [
     {
-      "username": "jenkins",
+      "username": "",
       "AWS_PROFILE": "rl-media-sandbox",
       "aws_profile": "rl-media-sandbox",
       "environment": "qa",
