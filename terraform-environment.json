@@ -1,0 +1,147 @@
+{
+  "_comment_env_configs": "top level environment configuration for the terraform run",
+  "environment": [
+    {
+      "username": "jenkins",
+      "AWS_PROFILE": "rl-media-sandbox",
+      "aws_profile": "rl-media-sandbox",
+      "environment": "qa",
+      "platform": "usa",
+      "VAULTKEY": "",
+      "aws_account_number": "762858336698",
+      "aws_region": "us-west-2",
+      "web_subnets": ["subnet-8497e4e3", "subnet-cab32683", "subnet-f2a84ba9"],
+      "app_subnets": ["subnet-a295e6c5", "subnet-63b92c2a", "subnet-0fb25154"],
+      "db_subnets": [],
+      "admin_subnets": [],
+      "on_prem_dns": "10.10.21.1",
+      "newrelic_license": "",
+      "security_groups": ["sg-57c9162d"],
+      "parent_domain": "media.reachlocalservices.com",
+      "vpc_id": "vpc-e9be9a8e"
+    }
+  ],
+  "_comment_modules": "order is important: built from top to bottom; destroyed from bottom to top",
+  "services": [
+    {
+      "serviceName": "terraform-aws-route53-subdomain",
+      "state": "enabled"
+    },
+    {
+      "serviceName": "terraform-aws-certificates",
+      "state": "enabled"
+    },
+    {
+      "serviceName": "terraform-aws-app-cluster-00",
+      "state": "enabled"
+    },
+    {
+      "serviceName": "terraform-aws-ecs-cluster-consul-app-tier",
+      "state": "enabled"
+    },
+    {
+      "serviceName": "terraform-aws-consul-bootstrap",
+      "state": "enabled"
+    },
+    {
+      "serviceName": "terraform-aws-consul-servers",
+      "state": "enabled"
+    },
+    {
+      "serviceName": "terraform-aws-consul-agents",
+      "state": "enabled"
+    },
+    {
+      "serviceName": "terraform-aws-registrator",
+      "state": "enabled"
+    },
+    {
+      "serviceName": "terraform-aws-jenkins-master",
+      "state": "enabled"
+    },
+    {
+      "serviceName": "terraform-aws-jenkins-agent",
+      "state": "enabled"
+    },
+    {
+      "serviceName": "terraform-aws-jenkins-agent-docker-builds",
+      "state": "disabled"
+    },
+    {
+      "serviceName": "terraform-aws-sumologic",
+      "state": "disabled"
+    },
+    {
+      "serviceName": "terraform-aws-ecr-repo-sync",
+      "state": "enabled"
+    },
+    {
+      "serviceName": "terraform-aws-vault",
+      "state": "enabled"
+    },
+    {
+      "serviceName": "terraform-aws-vault-cluster-manager",
+      "state": "enabled"
+    },
+    {
+      "serviceName": "terraform-aws-vault-config-manager",
+      "state": "enabled"
+    },
+    {
+      "serviceName": "terraform-aws-rundeck",
+      "state": "enabled"
+    },
+    {
+      "serviceName": "terraform-aws-prometheus-alertmanager",
+      "state": "disabled"
+    },
+    {
+      "serviceName": "terraform-aws-prometheus",
+      "state": "disabled"
+    },
+    {
+      "serviceName": "terraform-aws-prometheus-blackbox",
+      "state": "disabled"
+    },
+    {
+      "serviceName": "terraform-aws-spring-config-server",
+      "state": "enabled"
+    },
+    {
+      "serviceName": "terraform-aws-proposal-tool-v2",
+      "state": "disabled"
+    },
+    {
+      "serviceName": "terraform-aws-madmin-client",
+      "state": "disabled"
+    },
+    {
+      "serviceName": "terraform-aws-media-gateway",
+      "state": "disabled"
+    },
+    {
+      "serviceName": "terraform-aws-madmin-dashboard-etl",
+      "state": "disabled"
+    },
+    {
+      "serviceName": "terraform-aws-media-core-gateway",
+      "state": "disabled"
+    },
+    {
+      "serviceName": "terraform-aws-media-reporting",
+      "state": "disabled"
+    },
+    {
+      "serviceName": "terraform-aws-proposal-tool-client",
+      "state": "disabled"
+    },
+    {
+      "serviceName": "terraform-aws-media-etl-pentaho",
+      "state": "disabled"
+    },
+    {
+      "serviceName": "terraform-aws-google-ads-connector",
+      "state": "disabled"
+    }
+  ]
+}
