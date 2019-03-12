@@ -7,7 +7,7 @@
       "aws_profile": "rl-media-sandbox",
       "environment": "qa",
       "platform": "usa",
-      "VAULTKEY": "",
+      "VAULTKEY": "s.5CJyVoKgsciR6OkDkaFxBM6D",
       "aws_account_number": "762858336698",
       "aws_region": "us-west-2",
       "web_subnets": ["subnet-8497e4e3", "subnet-cab32683", "subnet-f2a84ba9"],
