@@ -3,8 +3,8 @@
   "environment": [
     {
       "username": "",
-      "AWS_PROFILE": "rl-media-sandbox",
-      "aws_profile": "rl-media-sandbox",
+      "AWS_PROFILE": "rl-tools",
+      "aws_profile": "rl-tools",
       "environment": "prod",
       "platform": "usa",
       "VAULTKEY": "s.5CJyVoKgsciR6OkDkaFxBM6D",
