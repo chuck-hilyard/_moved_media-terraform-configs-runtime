@@ -142,6 +142,10 @@
     {
       "serviceName": "terraform-aws-google-ads-connector",
       "state": "enabled"
+    },
+    {
+      "serviceName": "terraform-aws-media-search-etl",
+      "state": "enabled"
     }
   ]
 }

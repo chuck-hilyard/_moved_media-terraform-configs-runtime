@@ -25,7 +25,8 @@
   "INTERCOM_APPLICATION_ID": "x934uzl0",
   "YAHOO_ADPLATFORM_QUICKLINK_LABEL": "l10n-quick-link.yahooGeminiLogin",
   "YAHOO_ADPLATFORM_QUICKLINK_URL": "https://login.yahoo.com/config/login_verify2?.intl=us&&.src=gemini&.pd=c%3DDP7Q1..72e53flgv6OCrT4Lchg--&.done=https://gemini.yahoo.com/advertiser/home?.done=https:%2F%2Fgemini.yahoo.com%2F.scrumb=0",
-  "MEDIA_CORE_UI_URL": "https://media-core-ui.media.dev.usa.$${parent_domain}"
+  "MEDIA_CORE_UI_URL": "https://media-core-ui.media.dev.usa.$${parent_domain}",
+  "GOOGLE_TAG_MANAGER_ID": "GTM-MX5HTKN"
   }
 ],
 "ecs": [
