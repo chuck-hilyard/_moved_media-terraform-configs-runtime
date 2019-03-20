@@ -11,7 +11,7 @@
       "aws_account_number": "696165013664",
       "aws_region": "us-west-2",
       "web_subnets": ["subnet-f97c8680", "subnet-7ab15531"],
-      "app_subnets": ["subnet-56b3571d", "subnet-517b8128"],
+      "app_subnets": ["subnet-007c6346b02bbf4f2", "subnet-05ee7961fc7cac329"],
       "db_subnets": [],
       "admin_subnets": [],
       "on_prem_dns": "10.10.21.1",
