@@ -4,13 +4,13 @@
 "consul": [
   {
   "branch": "dockerizing",
-  "CLIENT_BASE_URL_AUS": "https://madmin-client.$${subdomain}.media.$${env}.aus.reachlocalservices.com",
-  "CLIENT_BASE_URL_CAN": "https://madmin-client.$${subdomain}.media.$${env}.can.reachlocalservices.com",
-  "CLIENT_BASE_URL_EUR": "https://madmin-client.$${subdomain}.media.$${env}.eur.reachlocalservices.com",
-  "CLIENT_BASE_URL_GBR": "https://madmin-client.$${subdomain}.media.$${env}.gbr.reachlocalservices.com",
-  "CLIENT_BASE_URL_JPN": "https://madmin-client.$${subdomain}.media.$${env}.jpn.reachlocalservices.com",
-  "CLIENT_BASE_URL_USA": "https://madmin-client.$${subdomain}.media.$${env}.usa.reachlocalservices.com",
-  "MEDIA_GATEWAY_BASE_URL": "http://media-gateway.$${fqdn}",
+  "CLIENT_BASE_URL_AUS": "https://madmin-client.$${env}.aus.$${parent_domain}",
+  "CLIENT_BASE_URL_CAN": "https://madmin-client.$${env}.can.$${parent_domain}",
+  "CLIENT_BASE_URL_EUR": "https://madmin-client.$${env}.eur.$${parent_domain}",
+  "CLIENT_BASE_URL_GBR": "https://madmin-client.$${env}.gbr.$${parent_domain}",
+  "CLIENT_BASE_URL_JPN": "https://madmin-client.$${env}.jpn.$${parent_domain}",
+  "CLIENT_BASE_URL_USA": "https://madmin-client.$${env}.usa.$${parent_domain}",
+  "MEDIA_GATEWAY_BASE_URL": "http://media-gateway.$${env}.$${platform}.$${parent_domain}",
   "ADMIN_PORTAL_URL_AUS": "https://platweb-aus.$${env}.reachlocal.com",
   "ADMIN_PORTAL_URL_CAN": "https://platweb-can.$${env}.reachlocal.com",
   "ADMIN_PORTAL_URL_EUR": "https://platweb-eur.$${env}.reachlocal.com",
@@ -25,7 +25,8 @@
   "INTERCOM_APPLICATION_ID": "x934uzl0",
   "YAHOO_ADPLATFORM_QUICKLINK_LABEL": "l10n-quick-link.yahooGeminiLogin",
   "YAHOO_ADPLATFORM_QUICKLINK_URL": "https://login.yahoo.com/config/login_verify2?.intl=us&&.src=gemini&.pd=c%3DDP7Q1..72e53flgv6OCrT4Lchg--&.done=https://gemini.yahoo.com/advertiser/home?.done=https:%2F%2Fgemini.yahoo.com%2F.scrumb=0",
-  "MEDIA_CORE_UI_URL": "https://media-core-ui.media.dev.usa.reachlocalservices.com"
+  "MEDIA_CORE_UI_URL": "https://media-core-ui.media.dev.usa.$${parent_domain}",
+  "GOOGLE_TAG_MANAGER_ID": "GTM-MX5HTKN"
   }
 ],
 "ecs": [

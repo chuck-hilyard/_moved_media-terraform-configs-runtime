@@ -1,11 +1,15 @@
 {
-  "_comment_env_configs": "high level environment configuration for the terraform run",
+  "_comment_env_configs": "top level environment configuration for the terraform run",
   "environment": [
     {
-      "aws_account_number": "762858336698",
-      "aws_region": "us-west-2",
+      "username": "",
+      "AWS_PROFILE": "rl-media-sandbox",
+      "aws_profile": "rl-media-sandbox",
       "environment": "dev",
       "platform": "usa",
+      "VAULTKEY": "s.5CJyVoKgsciR6OkDkaFxBM6D",
+      "aws_account_number": "762858336698",
+      "aws_region": "us-west-2",
       "web_subnets": ["subnet-8497e4e3", "subnet-cab32683", "subnet-f2a84ba9"],
       "app_subnets": ["subnet-a295e6c5", "subnet-63b92c2a", "subnet-0fb25154"],
       "db_subnets": [],
@@ -13,14 +17,11 @@
       "on_prem_dns": "10.10.21.1",
       "newrelic_license": "",
       "security_groups": ["sg-57c9162d"],
-      "username": "user1",
-      "subdomain": "user1",
-      "domain": "media.dev.usa.reachlocalservices.com",
-      "VAULTKEY": "7da38c81-6bcb-7639-05cd-2f48b952ce13",
+      "parent_domain": "media.reachlocalservices.com",
       "vpc_id": "vpc-e9be9a8e"
     }
   ],
-  "_comment_modules": "order is import: built from top to bottom; destroyed from bottom to top",
+  "_comment_modules": "order is important: built from top to bottom; destroyed from bottom to top",
   "services": [
     {
       "serviceName": "terraform-aws-route53-subdomain",
@@ -31,7 +32,7 @@
       "state": "enabled"
     },
     {
-      "serviceName": "terraform-aws-ecs-cluster-app-tier",
+      "serviceName": "terraform-aws-app-cluster-00",
       "state": "enabled"
     },
     {
@@ -71,6 +72,46 @@
       "state": "disabled"
     },
     {
+      "serviceName": "terraform-aws-ecr-repo-sync",
+      "state": "enabled"
+    },
+    {
+      "serviceName": "terraform-aws-vault",
+      "state": "enabled"
+    },
+    {
+      "serviceName": "terraform-aws-vault-cluster-manager",
+      "state": "enabled"
+    },
+    {
+      "serviceName": "terraform-aws-vault-config-manager",
+      "state": "enabled"
+    },
+    {
+      "serviceName": "terraform-aws-rundeck",
+      "state": "enabled"
+    },
+    {
+      "serviceName": "terraform-aws-prometheus-alertmanager",
+      "state": "enabled"
+    },
+    {
+      "serviceName": "terraform-aws-prometheus",
+      "state": "enabled"
+    },
+    {
+      "serviceName": "terraform-aws-prometheus-blackbox",
+      "state": "enabled"
+    },
+    {
+      "serviceName": "terraform-aws-spring-config-server",
+      "state": "enabled"
+    },
+    {
+      "serviceName": "terraform-aws-proposal-tool-v2",
+      "state": "enabled"
+    },
+    {
       "serviceName": "terraform-aws-madmin-client",
       "state": "enabled"
     },
@@ -79,12 +120,32 @@
       "state": "enabled"
     },
     {
-      "serviceName": "terraform-aws-ecr-repo-sync",
+      "serviceName": "terraform-aws-madmin-dashboard-etl",
       "state": "enabled"
     },
     {
-      "serviceName": "terraform-aws-vault",
-      "state": "ignore"
+      "serviceName": "terraform-aws-media-core-gateway",
+      "state": "enabled"
+    },
+    {
+      "serviceName": "terraform-aws-media-reporting",
+      "state": "enabled"
+    },
+    {
+      "serviceName": "terraform-aws-proposal-tool-client",
+      "state": "enabled"
+    },
+    {
+      "serviceName": "terraform-aws-media-etl-pentaho",
+      "state": "enabled"
+    },
+    {
+      "serviceName": "terraform-aws-google-ads-connector",
+      "state": "enabled"
+    },
+    {
+      "serviceName": "terraform-aws-media-search-etl",
+      "state": "enabled"
     }
   ]
 }

@@ -53,12 +53,12 @@
   "ADVERTISER_SERVICE_EUR_API_URL"    : "https://ws-qa-eur-nx1.qa.reachlocal.com/advertiser-service",
   "ADVERTISER_SERVICE_JPN_API_URL"    : "https://ws-qa-jpn-nx1.qa.reachlocal.com/advertiser-service",
   "MEDIA_REPORTING_TOKEN"             : "f332acb9-5eb6-4ede-b29e-10d87d57b8ec",
-  "MEDIA_REPORTING_USA_API_URL"       : "https://media-reporting.$${subdomain}.$${env}.usa.reachlocalservices.com:8080/media-reporting/",
-  "MEDIA_REPORTING_AUS_API_URL"       : "https://media-reporting.$${subdomain}.$${env}.aus.reachlocalservices.com:8080/media-          reporting/",
-  "MEDIA_REPORTING_CAN_API_URL"       : "https://media-reporting.$${subdomain}.$${env}.can.reachlocalservices.com:8080/media-          reporting/",
-  "MEDIA_REPORTING_GBR_API_URL"       : "https://media-reporting.$${subdomain}.$${env}.gbr.reachlocalservices.com:8080/media-          reporting/",
-  "MEDIA_REPORTING_EUR_API_URL"       : "https://media-reporting.$${subdomain}.$${env}.eur.reachlocalservices.com:8080/media-          reporting/",
-  "MEDIA_REPORTING_JPN_API_URL"       : "https://media-reporting.$${subdomain}.$${env}.jpn.reachlocalservices.com:8080/media-          reporting/",
+  "MEDIA_REPORTING_USA_API_URL"       : "https://media-reporting..$${env}.usa.$${parent_domain}:8080/media-reporting/",
+  "MEDIA_REPORTING_AUS_API_URL"       : "https://media-reporting.$${env}.aus.$${parent_domain}:8080/media-reporting/",
+  "MEDIA_REPORTING_CAN_API_URL"       : "https://media-reporting.$${env}.can.$${parent_domain}:8080/media-reporting/",
+  "MEDIA_REPORTING_GBR_API_URL"       : "https://media-reporting.$${env}.gbr.$${parent_domain}:8080/media-reporting/",
+  "MEDIA_REPORTING_EUR_API_URL"       : "https://media-reporting.$${env}.eur.$${parent_domain}:8080/media-reporting/",
+  "MEDIA_REPORTING_JPN_API_URL"       : "https://media-reporting.$${env}.jpn.$${parent_domain}:8080/media-reporting/",
   "LDAP_URL"                          : "ldap://adauth:389"
   }
 ],
