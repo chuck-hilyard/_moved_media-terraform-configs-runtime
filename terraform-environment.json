@@ -141,7 +141,15 @@
     },
     {
       "serviceName": "terraform-aws-google-ads-connector",
-      "state": "disabled"
+      "state": "enabled"
+    },
+    {
+      "serviceName": "terraform-aws-google-mc-connector",
+      "state": "enabled"
+    },
+    {
+      "serviceName": "terraform-aws-shopping-reports",
+      "state": "enabled"
     }
   ]
 }
